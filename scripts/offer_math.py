@@ -90,14 +90,18 @@ def audit(offers):
         return {unit: min((r for r in group if r['base_unit'] == unit),
                           key=lambda r: Decimal(r[key]), default=None)
                 for unit in sorted({r['base_unit'] for r in group})}
+    def amazon_offer(r):
+        channel = (r.get('channel') or '').lower()
+        seller = (r.get('merchant') or '').lower()
+        return channel in ('amazon', 'amazon.de') or seller.startswith('amazon') or seller.endswith('amazon.de')
     return {'offers': rows,
             'confirmed_lowest_unit': minimum(confirmed, 'delivered_price_per_unit_eur'),
             'confirmed_lowest_spend': minimum(confirmed, 'delivered_total_eur'),
             'provisional_lowest_unit': minimum(provisional, 'delivered_price_per_unit_eur'),
-            'checked_amazon': any((r.get('channel') or '').lower() in ('amazon', 'amazon.de') or
-                                  (r.get('merchant') or '').lower().startswith('amazon') or
-                                  (r.get('merchant') or '').lower().endswith('amazon.de')
-                                  for r in rows if r['availability'] != 'unsearched')}
+            'amazon_evidence_present': any(amazon_offer(r) for r in rows),
+            # Does not imply an exhaustive Amazon sweep or checkout verification.
+            'checked_amazon': any(amazon_offer(r) and r['availability'] in
+                                  ('checkout-confirmed', 'listing-in-stock') for r in rows)}
 
 
 def main():
