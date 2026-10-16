@@ -76,6 +76,15 @@ class OfferMathTests(unittest.TestCase):
     def test_amazon_detected(self):
         self.assertTrue(m.audit([offer(merchant='Amazon.de')])['checked_amazon'])
 
+    def test_user_supplied_amazon_lead_not_marked_as_verified(self):
+        r = m.audit([offer(merchant='Amazon.de', availability='user-reported')])
+        self.assertTrue(r['amazon_evidence_present'])
+        self.assertFalse(r['checked_amazon'])
+
+    def test_third_party_amazon_channel_detected(self):
+        r = m.audit([offer(merchant='Independent merchant', channel='amazon.de')])
+        self.assertTrue(r['checked_amazon'])
+
     def test_european_decimal_comma(self):
         self.assertEqual(m.normalize(offer(item_total='3,49'))['item_total_eur'], '3.49')
 
