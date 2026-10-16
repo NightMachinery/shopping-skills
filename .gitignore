@@ -1,0 +1,22 @@
+# Secrets and browser or shopping-session data
+.env
+.env.*
+*.har
+*cookie*.json
+*session*.json
+credentials*.json
+secrets*.json
+offers*.json
+offer_evidence*.json
+checkout*.json
+shopping_log*.json
+local-shopping-notes.*
+# Runtime/generated and editor files
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.png
+*.jpg
+*.jpeg
+*.webp

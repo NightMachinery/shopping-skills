@@ -1,0 +1,302 @@
+{
+  "description": "Research starting points for professional refurbished devices delivered in Germany. Catalogue is not exhaustive; independently verify stock, total prices, return conditions and seller.",
+  "last_reviewed": "2026-10-16",
+  "providers": [
+    {
+      "id": "rebuy",
+      "name": "rebuy",
+      "url": "https://www.rebuy.de/",
+      "kind": "direct",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "gaming",
+        "cameras",
+        "audio"
+      ]
+    },
+    {
+      "id": "asgoodasnew",
+      "name": "asgoodasnew",
+      "url": "https://asgoodasnew.de/",
+      "kind": "direct",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "cameras"
+      ]
+    },
+    {
+      "id": "clevertronic",
+      "name": "clevertronic",
+      "url": "https://www.clevertronic.de/",
+      "kind": "direct",
+      "categories": [
+        "phones",
+        "tablets",
+        "apple",
+        "laptops"
+      ]
+    },
+    {
+      "id": "janado",
+      "name": "janado",
+      "url": "https://www.janado.de/",
+      "kind": "direct",
+      "categories": [
+        "phones",
+        "tablets",
+        "apple",
+        "laptops"
+      ]
+    },
+    {
+      "id": "buyzoxs",
+      "name": "buyZOXS",
+      "url": "https://www.buyzoxs.de/",
+      "kind": "direct",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "gaming",
+        "cameras"
+      ]
+    },
+    {
+      "id": "swappie",
+      "name": "Swappie",
+      "url": "https://swappie.com/de/",
+      "kind": "direct",
+      "categories": [
+        "phones",
+        "apple"
+      ]
+    },
+    {
+      "id": "myswooop",
+      "name": "mySWOOOP",
+      "url": "https://www.my-swooop.de/",
+      "kind": "direct",
+      "categories": [
+        "phones",
+        "tablets",
+        "apple",
+        "laptops",
+        "gaming"
+      ]
+    },
+    {
+      "id": "mobilshop3000",
+      "name": "mobilshop3000",
+      "url": "https://www.mobilshop3000.de/",
+      "kind": "direct",
+      "categories": [
+        "phones",
+        "apple"
+      ]
+    },
+    {
+      "id": "maconline",
+      "name": "Maconline",
+      "url": "https://maconline.de/",
+      "kind": "direct",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "pc"
+      ]
+    },
+    {
+      "id": "afb-shop",
+      "name": "AfB shop",
+      "url": "https://www.afbshop.de/",
+      "kind": "direct",
+      "categories": [
+        "laptops",
+        "pc",
+        "tablets",
+        "phones",
+        "apple"
+      ]
+    },
+    {
+      "id": "itsco",
+      "name": "ITSCO",
+      "url": "https://www.itsco.de/",
+      "kind": "direct",
+      "categories": [
+        "laptops",
+        "pc",
+        "tablets",
+        "phones"
+      ]
+    },
+    {
+      "id": "esm-computer",
+      "name": "ESM Computer",
+      "url": "https://www.esm-computer.de/",
+      "kind": "direct",
+      "categories": [
+        "laptops",
+        "pc"
+      ]
+    },
+    {
+      "id": "lapstore",
+      "name": "LapStore",
+      "url": "https://www.lapstore.de/",
+      "kind": "direct",
+      "categories": [
+        "laptops",
+        "pc",
+        "tablets",
+        "phones",
+        "apple"
+      ]
+    },
+    {
+      "id": "greenpanda",
+      "name": "GreenPanda",
+      "url": "https://greenpanda.de/",
+      "kind": "direct",
+      "categories": [
+        "laptops",
+        "pc"
+      ]
+    },
+    {
+      "id": "luxnote",
+      "name": "LUXNOTE",
+      "url": "https://www.luxnote-hannover.de/",
+      "kind": "direct",
+      "categories": [
+        "laptops",
+        "pc"
+      ]
+    },
+    {
+      "id": "back-market",
+      "name": "Back Market",
+      "url": "https://www.backmarket.de/de-de",
+      "kind": "marketplace",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "pc",
+        "gaming",
+        "audio",
+        "cameras"
+      ]
+    },
+    {
+      "id": "refurbed",
+      "name": "refurbed",
+      "url": "https://www.refurbed.de/",
+      "kind": "marketplace",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "pc",
+        "gaming",
+        "audio",
+        "cameras"
+      ]
+    },
+    {
+      "id": "ebay-refurbished",
+      "name": "eBay Refurbished",
+      "url": "https://www.ebay.de/",
+      "kind": "marketplace",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "pc",
+        "gaming",
+        "audio",
+        "cameras"
+      ]
+    },
+    {
+      "id": "amazon-renewed",
+      "name": "Amazon Renewed",
+      "url": "https://www.amazon.de/",
+      "kind": "marketplace",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "pc",
+        "gaming",
+        "audio",
+        "cameras"
+      ]
+    },
+    {
+      "id": "apple-certified-refurbished",
+      "name": "Apple Certified Refurbished",
+      "url": "https://www.apple.com/de/shop/refurbished",
+      "kind": "manufacturer",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "pc"
+      ]
+    },
+    {
+      "id": "refurbme",
+      "name": "RefurbMe",
+      "url": "https://www.refurb.me/de",
+      "kind": "comparison",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "audio"
+      ]
+    },
+    {
+      "id": "refurbily",
+      "name": "Refurbily",
+      "url": "https://refurbily.de/",
+      "kind": "comparison",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple"
+      ]
+    },
+    {
+      "id": "gebraucht-io",
+      "name": "gebraucht.io",
+      "url": "https://gebraucht.io/",
+      "kind": "comparison",
+      "categories": [
+        "phones",
+        "tablets",
+        "laptops",
+        "apple",
+        "pc",
+        "gaming"
+      ]
+    }
+  ]
+}
