@@ -7,7 +7,7 @@ from urllib.parse import quote_plus, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 CATEGORIES = ("all", "phones", "tablets", "laptops", "pc", "apple", "gaming", "cameras", "audio")
-SIMPLE = {"idealo": ("Idealo", "https://www.idealo.de/"), "geizhals": ("Geizhals", "https://geizhals.de/")}
+SIMPLE = {"amazon": ("Amazon.de", "https://www.amazon.de/"), "idealo": ("Idealo", "https://www.idealo.de/"), "geizhals": ("Geizhals", "https://geizhals.de/")}
 
 def build_entries(product, sources, category="all", limit=None):
     if not product.strip():
@@ -30,7 +30,7 @@ def build_entries(product, sources, category="all", limit=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("product")
-    parser.add_argument("--sources", nargs="+", choices=["refurb", "idealo", "geizhals"], default=["idealo","geizhals","refurb"])
+    parser.add_argument("--sources", nargs="+", choices=["amazon", "refurb", "idealo", "geizhals"], default=["amazon","idealo","geizhals","refurb"])
     parser.add_argument("--category", choices=CATEGORIES, default="all")
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--limit", type=int, default=30)
